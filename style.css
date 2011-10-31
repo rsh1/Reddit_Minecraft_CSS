@@ -1,6 +1,24 @@
- a[href$="/spoiler"] { background: #000 !important; color: #000 !important } a[href$="/spoiler"]:hover { color: #FFF !important } div.usertext-body table { width: 90% } div.usertext-body table td, div.usertext-body table th { border: 1px solid #888; font-size: 0.8em }
+ 
+ /* Spoiler Tag */
+ a[href$="/spoiler"] {
+    background: #000 !important;
+    color: #000 !important
+}
 
-/* Announcement Box Test */
+a[href$="/spoiler"]:hover {
+    color: #FFF !important
+}
+   
+div.usertext-body table {
+    width: 90%
+}
+
+div.usertext-body table td, div.usertext-body table th {
+    border: 1px solid #888;
+    font-size: 0.8em
+}
+
+/* Announcement Box */
 .preload ~ .content:before {
     content: "Read the sidebar if you're new!  There's some really informative stuff over there! -->";
     background-color: white;
@@ -11,20 +29,19 @@
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px
-    }
+}
 
-/* Report button hover thingy */
+/* Report Button Hover*/
 .report-button > span.option.error:before {
    content: "Does this break the subreddit rules? ";
 }
 
 .sitetable {
     margin-top: 14px
-    }
+}
 .content {
     margin-top: 14px
-    }
-/* */
+}
 
 /* Sidebar Test Below */
 
@@ -42,34 +59,8 @@
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px
-    }
-
-/**/
-
-/*Flair Test Below*/
-
-/*
-.flair-developer
-{
-  color: red !important;
 }
 
-
-.flair-developer
-{
-  background: url(%%mojang-icon%%) no-repeat scroll;
-  height: 16px;
-  width: 16px;
-  margin-right: -1px;
-  border: 0px;
-  content: "";
-}
-
-.flair-modtest
-{
- color: #369;
-}
-*/
 #header {
  background-color:#CCCCCC;
  background-image:url(%%rock%%);
@@ -98,7 +89,7 @@ body
   background-position: 70% 100%;
 } 
     
-    /* mail */
+/* Mail Icons */
 #mail {
     position: relative;
     display: inline-block;
@@ -111,18 +102,21 @@ body
 #mail.havemail {
     background:url(%%mail2%%);
 }
+
 /* Change the description of "subscribers"*/
 div.titlebox span.word {
     display: none
-    }
+}
+
 div.titlebox span.number:after {
     content: " miners."
-    }
+}
+
 div.titlebox span.number:before {
     content: "The legion of  "
-    }
+}
 
-    /*User Tags*/
+/*User Tags*/
 .author[href$="/k__z"]:after
 {
     color: red;
@@ -132,40 +126,6 @@ div.titlebox span.number:before {
 a.author[href$="/AlLnAtuRalX"]:after{
     content: "?";
     }
-
-
-.flair-turkey {
-    /* Put the right flair here */
-}
-
-.flair-gturkey {
-    /* Put the right flair here */
-}
-
-.flair-servdonator {
-    /* Put the right flair here */
-}
-
-.flair-helper {
-    /* Put the right flair here */
-}
-
-.flair-dj {
-    /* Put the right flair here */
-}
-
-.flair-admin {
-    /* Put the right flair here */
-}
-
-.flair-survivor {
-    /* Put the right flair here */
-}
-
-.flair-participant {
-    /* Put the right flair here */
-}
-
 
 /* Remove this when done
 a.author[href$="/tayworm"]:after,a.author[href$="/armchairnixon"]:after,a.author[href$="/lego-banana"]:after,a.author[href$="/TaviRider"]:after,a.author[href$="/cecilkorik"]:after,a.author[href$="/nullpacket"]:after,a.author[href$="/squatly"]:after,a.author[href$="/jakemcgraw"]:after,a.author[href$="/shawnsonium"]:after,a.author[href$="/cablemonkey"]:after,a.author[href$="/Bales75"]:after,a.author[href$="/CmdrTebok"]:after,a.author[href$="/forty_two"]:after,a.author[href$="/trevorsutton"]:after,a.author[href$="/pettazz"]:after,a.author[href$="/anonymouse91"]:after,a.author[href$="/Mark"]:after,a.author[href$="/Garrett"]:after,a.author[href$="/Jesse"]:after,a.author[href$="/TheQuietOne"]:after,a.author[href$="/William"]:after,a.author[href$="/Herobrine"]:after,a.author[href$="/Joseph"]:after,a.author[href$="/lenaro"]:after,a.author[href$="/Skuld"]:after,a.author[href$="/Alvaro"]:after,a.author[href$="/Trinette"]:after,a.author[href$="/Ginger"]:after,a.author[href$="/AlLnAtuRalX"]:after,a.author[href$="/Daychilde"]:after,a.author[href$="/draggin_low"]:after,a.author[href$="/Cablemonkey"]:after,a.author[href$="/sstrickl"]:after,a.author[href$="/golf1052"]:after,a.author[href$="/CousinMosquito"]:after,a.author[href$="/Lord_Munkee"]:after,a.author[href$="/jcll"]:after,a.author[href$="/rossberry"]:after,a.author[href$="/adrianp"]:after,a.author[href$="/p0sco"]:after,a.author[href$="/theCroc"]:after,a.author[href$="/Lagrange"]:after,a.author[href$="/cattrain"]:after,a.author[href$="/Lampjaw"]:after,a.author[href$="/SuitableUsername"]:after,a.author[href$="/ArcadeStorm"]:after,a.author[href$="/justawhale"]:after,a.author[href$="/fazaden"]:after,a.author[href$="/ThatsANiceEverything"]:after,a.author[href$="/silentbob583"]:after,a.author[href$="/greenboy919"]:after,a.author[href$="/AtheistAgnostic"]:after,a.author[href$="/mikereads"]:after,a.author[href$="/p4nny"]:after,a.author[href$="/BFKelleher"]:after,a.author[href$="/jupiter3888"]:after,a.author[href$="/Ahtna"]:after,a.author[href$="/cthulhu_zuul"]:after,a.author[href$="/bsheairs"]:after,a.author[href$="/Flannel_Man"]:aftera.author[href$="/AngryMathDave"]:after,a.author[href$="/Dvorak42"]:after,a.author[href$="/Laughing_man"]:after,a.author[href$="/Nix725"]:after,a.author[href$="/AngryMathDave"]:after,a.author[href$="/DJ-Anakin"]:after,a.author[href$="/pspkicks316"]:after,a.author[href$="/pspkicks316"]:after,a.author[href$="/tmbridge"]:after,a.author[href$="/Sycosys"]:after,a.author[href$="/Leading_Man_Parts"]:after,a.author[href$="/vjness101"]:after,a.author[href$="/lifeofthunder"]:after,a.author[href$="/jk2323"]:after,a.author[href$="/daychilde"]:after,a.author[href$="/Zeropointeffect"]:after,a.author[href$="/pressertim"]:after,a.author[href$="/j0hn33y"]:after,a.author[href$="/X3Maverick"]:after,a.author[href$="/outwrangle"]:after,a.author[href$="/Dakewla"]:after,a.author[href$="/TurplePurtle"]:after,a.author[href$="/Eustis"]:after,a.author[href$="/klhinkle"]:after,a.author[href$="/PseudoBeard"]:after,a.author[href$="/Pharmboy_Andy"]:after,a.author[href$="/swytz"]:after,a.author[href$="/skug"]:after,a.author[href$="/shen"]:after,a.author[href$="/JesusTheCaffeine"]:after,a.author[href$="/Vietarmis"]:after,a.author[href$="/ThePwnStick"]:after,a.author[href$="/HolyZesto"]:after,a.author[href$="/SmudgeTheFirst"]:after,a.author[href$="/HolyZesto"]:after,a.author[href$="/BArmstrong"]:after,a.author[href$="/thatPaulBloke"]:after,a.author[href$="/Konryou"]:after,a.author[href$="/wilsonc11"]:after {
@@ -1372,32 +1332,8 @@ a[href="/varc"]:after {
 a[href="/vard"]:after {
     background-position: -608px
     }
-    
-    /* APRIL FOOLS GOES HERE */
-/* You're a dick, lol. <3 doctorsound */
-/*I added some. :D ~Starshell */
-/*
-a:hover
-{
-  direction: rtl;
-  unicode-bidi: bidi-override;
-  font-family: "Comic Sans MS", Georgia, sans-serif !important;
-  color: #FF00FF !important;
-  text-shadow: #FF00FF 0px -15px 0;
-}
 
-
- .linklisting
-{
-  background-image:url(%%notchheadsmall%%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-} 
-*/
-/* APRIL FOOLS ENDS HERE */
-
-/* User flair stuffs: */
+/* User Flair: */
 .flair {
     background: url(%%flair%%) no-repeat scroll -9999px -9999px transparent;
     height: 16px;
@@ -1524,4 +1460,41 @@ a:hover
 }
 .flair-magentasheep {
     background-position: 0px -608px;
+}
+
+/* Old 'Flair' */
+.flair-turkey {
+    /* Put the right flair here */
+}
+
+.flair-gturkey {
+    /* Put the right flair here */
+}
+
+.flair-servdonator {
+    /* Put the right flair here */
+}
+
+.flair-helper {
+    /* Put the right flair here */
+}
+
+.flair-dj {
+    /* Put the right flair here */
+}
+
+.flair-admin {
+    /* Put the right flair here */
+}
+
+.flair-survivor {
+    /* Put the right flair here */
+}
+
+.flair-participant {
+    /* Put the right flair here */
+}
+
+.flar-painting {
+    /* Put the right flair here */
 }
