@@ -1,0 +1,662 @@
+// Some of this was blatantly ripped from F7U12's scss - thanks!
+
+.items {
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-image: url(%%items%%);
+    display: inline-block;
+}
+
+.usertext-body a {
+    display: inline-block;
+}
+
+@mixin pos($x: 0, $y: 0) {
+    background-position: #{- $x + px} #{- $y + px};
+}
+
+// Blank space:
+a[href="/blank"]:after {
+    @extend .items;
+    @include pos(0, 144);
+}
+
+
+// Helmets and tools:
+a[href="/l_helm"]:after {
+    @extend .items;
+    @include pos(0, 0);
+}
+a[href="/l_chest"]:after {
+    @extend .items;
+    @include pos(0, 16);
+}
+a[href="/l_pants"]:after {
+    @extend .items;
+    @include pos(0, 32);
+}
+a[href="/l_boots"]:after {
+    @extend .items;
+    @include pos(0, 48);
+}
+a[href="/w_sword"]:after {
+    @extend .items;
+    @include pos(0, 64);
+}
+a[href="/w_shovel"]:after {
+    @extend .items;
+    @include pos(0, 80);
+}
+a[href="/w_pick"]:after {
+    @extend .items;
+    @include pos(0, 96);
+}
+a[href="/w_axe"]:after {
+    @extend .items;
+    @include pos(0, 112);
+}
+a[href="/w_hoe"]:after {
+    @extend .items;
+    @include pos(0, 128);
+}
+a[href="/cm_helm"]:after {
+    @extend .items;
+    @include pos(16, 0);
+}
+a[href="/cm_chest"]:after {
+    @extend .items;
+    @include pos(16, 16);
+}
+a[href="/cm_pants"]:after {
+    @extend .items;
+    @include pos(16, 32);
+}
+a[href="/cm_boots"]:after {
+    @extend .items;
+    @include pos(16, 48);
+}
+a[href="/s_sword"]:after {
+    @extend .items;
+    @include pos(16, 64);
+}
+a[href="/s_shovel"]:after {
+    @extend .items;
+    @include pos(16, 80);
+}
+a[href="/s_pick"]:after {
+    @extend .items;
+    @include pos(16, 96);
+}
+a[href="/s_axe"]:after {
+    @extend .items;
+    @include pos(16, 112);
+}
+a[href="/s_hoe"]:after {
+    @extend .items;
+    @include pos(16, 128);
+}
+a[href="/i_helm"]:after {
+    @extend .items;
+    @include pos(32, 0);
+}
+a[href="/i_chest"]:after {
+    @extend .items;
+    @include pos(32, 16);
+}
+a[href="/i_pants"]:after {
+    @extend .items;
+    @include pos(32, 32);
+}
+a[href="/i_boots"]:after {
+    @extend .items;
+    @include pos(32, 48);
+}
+a[href="/i_sword"]:after {
+    @extend .items;
+    @include pos(32, 64);
+}
+a[href="/i_shovel"]:after {
+    @extend .items;
+    @include pos(32, 80);
+}
+a[href="/i_pick"]:after {
+    @extend .items;
+    @include pos(32, 96);
+}
+a[href="/i_axe"]:after {
+    @extend .items;
+    @include pos(32, 112);
+}
+a[href="/i_hoe"]:after {
+    @extend .items;
+    @include pos(32, 128);
+}
+a[href="/d_helm"]:after {
+    @extend .items;
+    @include pos(48, 0);
+}
+a[href="/d_chest"]:after {
+    @extend .items;
+    @include pos(48, 16);
+}
+a[href="/d_pants"]:after {
+    @extend .items;
+    @include pos(48, 32);
+}
+a[href="/d_boots"]:after {
+    @extend .items;
+    @include pos(48, 48);
+}
+a[href="/d_sword"]:after {
+    @extend .items;
+    @include pos(48, 64);
+}
+a[href="/d_shovel"]:after {
+    @extend .items;
+    @include pos(48, 80);
+}
+a[href="/d_pick"]:after {
+    @extend .items;
+    @include pos(48, 96);
+}
+a[href="/d_axe"]:after {
+    @extend .items;
+    @include pos(48, 112);
+}
+a[href="/d_hoe"]:after {
+    @extend .items;
+    @include pos(48, 128);
+}
+a[href="/g_helm"]:after {
+    @extend .items;
+    @include pos(64, 0);
+}
+a[href="/g_chest"]:after {
+    @extend .items;
+    @include pos(64, 16);
+}
+a[href="/g_pants"]:after {
+    @extend .items;
+    @include pos(64, 32);
+}
+a[href="/g_boots"]:after {
+    @extend .items;
+    @include pos(64, 48);
+}
+a[href="/g_sword"]:after {
+    @extend .items;
+    @include pos(64, 64);
+}
+a[href="/g_shovel"]:after {
+    @extend .items;
+    @include pos(64, 80);
+}
+a[href="/g_pick"]:after {
+    @extend .items;
+    @include pos(64, 96);
+}
+a[href="/g_axe"]:after {
+    @extend .items;
+    @include pos(64, 112);
+}
+a[href="/g_hoe"]:after {
+    @extend .items;
+    @include pos(64, 128);
+}
+a[href="/flint_steel"]:after {
+    @extend .items;
+    @include pos(80, 0);
+}
+a[href="/bow"]:after {
+    @extend .items;
+    @include pos(80, 16);
+}
+a[href="/arrow"]:after {
+    @extend .items;
+    @include pos(80, 32);
+}
+a[href="/stick"]:after {
+    @extend .items;
+    @include pos(80, 48);
+}
+a[href="/fish_pole"]:after {
+    @extend .items;
+    @include pos(80, 64);
+}
+a[href="/fish_pole2"]:after {
+    @extend .items;
+    @include pos(80, 80);
+}
+a[href="/bow_arrow"]:after {
+    @extend .items;
+    @include pos(80, 96);
+}
+a[href="/bow_arrow2"]:after {
+    @extend .items;
+    @include pos(80, 112);
+}
+a[href="/bow_arrow3"]:after {
+    @extend .items;
+    @include pos(80, 128);
+}
+
+// The rest of the items:
+a[href="/flint"]:after {
+    @extend .items;
+    @include pos(96, 0);
+}
+a[href="/brick"]:after {
+    @extend .items;
+    @include pos(96, 16);
+}
+a[href="/quiver"]:after {
+    @extend .items;
+    @include pos(96, 32);
+}
+a[href="/compass"]:after {
+    @extend .items;
+    @include pos(96, 48);
+}
+a[href="/watch"]:after {
+    @extend .items;
+    @include pos(96, 64);
+}
+a[href="/repeater"]:after {
+    @extend .items;
+    @include pos(96, 80);
+}
+a[href="/coal"]:after {
+    @extend .items;
+    @include pos(112, 0);
+}
+a[href="/i_ignot"]:after {
+    @extend .items;
+    @include pos(112, 16);
+}
+a[href="/g_ignot"]:after {
+    @extend .items;
+    @include pos(112, 32);
+}
+a[href="/diamond"]:after {
+    @extend .items;
+    @include pos(112, 48);
+}
+a[href="/bowl"]:after {
+    @extend .items;
+    @include pos(112, 64);
+}
+a[href="/pork"]:after {
+    @extend .items;
+    @include pos(112, 80);
+}
+a[href="/leather"]:after {
+    @extend .items;
+    @include pos(112, 96);
+}
+a[href="/minecart"]:after {
+    @extend .items;
+    @include pos(112, 128);
+}
+a[href="/s_minecart"]:after {
+    @extend .items;
+    @include pos(112, 144);
+}
+a[href="/f_minecart"]:after {
+    @extend .items;
+    @include pos(112, 160);
+}
+a[href="/string"]:after {
+    @extend .items;
+    @include pos(128, 0);
+}
+a[href="/feather"]:after {
+    @extend .items;
+    @include pos(128, 16);
+}
+a[href="/gunpowder"]:after {
+    @extend .items;
+    @include pos(128, 32);
+}
+a[href="/redstone"]:after {
+    @extend .items;
+    @include pos(128, 48);
+}
+a[href="/s_bowl"]:after {
+    @extend .items;
+    @include pos(128, 64);
+}
+a[href="/c_pork"]:after {
+    @extend .items;
+    @include pos(128, 80);
+}
+a[href="/saddle"]:after {
+    @extend .items;
+    @include pos(128, 96);
+}
+a[href="/boat"]:after {
+    @extend .items;
+    @include pos(128, 128);
+}
+a[href="/seeds"]:after {
+    @extend .items;
+    @include pos(144, 0);
+}
+a[href="/wheat"]:after {
+    @extend .items;
+    @include pos(144, 16);
+}
+a[href="/bread"]:after {
+    @extend .items;
+    @include pos(144, 32);
+}
+a[href="/clay"]:after {
+    @extend .items;
+    @include pos(144, 48);
+}
+a[href="/gs_dust"]:after {
+    @extend .items;
+    @include pos(144, 64);
+}
+a[href="/fish"]:after {
+    @extend .items;
+    @include pos(144, 80);
+}
+a[href="/beef"]:after {
+    @extend .items;
+    @include pos(144, 96);
+}
+a[href="/r_chicken"]:after {
+    @extend .items;
+    @include pos(144, 112);
+}
+a[href="/g_melon"]:after {
+    @extend .items;
+    @include pos(144, 128);
+}
+a[href="/apple"]:after {
+    @extend .items;
+    @include pos(160, 0);
+}
+a[href="/painting"]:after {
+    @extend .items;
+    @include pos(160, 16);
+}
+a[href="/sign"]:after {
+    @extend .items;
+    @include pos(160, 32);
+}
+a[href="/paper"]:after {
+    @extend .items;
+    @include pos(160, 48);
+}
+a[href="/bucket"]:after {
+    @extend .items;
+    @include pos(160, 64);
+}
+a[href="/c_fish"]:after {
+    @extend .items;
+    @include pos(160, 80);
+}
+a[href="/steak"]:after {
+    @extend .items;
+    @include pos(160, 96);
+}
+a[href="/c_chicken"]:after {
+    @extend .items;
+    @include pos(160, 112);
+}
+a[href="/f_s_eye"]:after {
+    @extend .items;
+    @include pos(160, 128);
+}
+a[href="/g_apple"]:after {
+    @extend .items;
+    @include pos(174, 0);
+}
+a[href="/sugarcane"]:after {
+    @extend .items;
+    @include pos(174, 16);
+}
+a[href="/w_door"]:after {
+    @extend .items;
+    @include pos(174, 32);
+}
+a[href="/book"]:after {
+    @extend .items;
+    @include pos(174, 48);
+}
+a[href="/w_bucket"]:after {
+    @extend .items;
+    @include pos(174, 64);
+}
+a[href="/r_flesh"]:after {
+    @extend .items;
+    @include pos(174, 80);
+}
+a[href="/e_pearl"]:after {
+    @extend .items;
+    @include pos(174, 96);
+}
+a[href="/g_tear"]:after {
+    @extend .items;
+    @include pos(174, 112);
+}
+a[href="/s_eye"]:after {
+    @extend .items;
+    @include pos(174, 128);
+}
+a[href="/e_eye"]:after {
+    @extend .items;
+    @include pos(174, 144);
+}
+a[href="/egg"]:after {
+    @extend .items;
+    @include pos(190, 0);
+}
+a[href="/bone"]:after {
+    @extend .items;
+    @include pos(190, 16);
+}
+a[href="/i_door"]:after {
+    @extend .items;
+    @include pos(190, 32);
+}
+a[href="/map"]:after {
+    @extend .items;
+    @include pos(190, 48);
+}
+a[href="/l_bucket"]:after {
+    @extend .items;
+    @include pos(190, 64);
+}
+a[href="/cookie"]:after {
+    @extend .items;
+    @include pos(190, 80);
+}
+a[href="/b_rod"]:after {
+    @extend .items;
+    @include pos(190, 96);
+}
+a[href="/g_nugget"]:after {
+    @extend .items;
+    @include pos(190, 112);
+}
+a[href="/bottle"]:after {
+    @extend .items;
+    @include pos(190, 128);
+}
+a[href="/cauldron"]:after {
+    @extend .items;
+    @include pos(190, 144);
+}
+a[href="/b_stand"]:after {
+    @extend .items;
+    @include pos(190, 160);
+}
+a[href="/sugar"]:after {
+    @extend .items;
+    @include pos(206, 0);
+}
+a[href="/cake"]:after {
+    @extend .items;
+    @include pos(206, 16);
+}
+a[href="/bed"]:after {
+    @extend .items;
+    @include pos(206, 32);
+}
+a[href="/p_seeds"]:after {
+    @extend .items;
+    @include pos(206, 48);
+}
+a[href="/m_bucket"]:after {
+    @extend .items;
+    @include pos(206, 64);
+}
+a[href="/shears"]:after {
+    @extend .items;
+    @include pos(206, 80);
+}
+a[href="/melon_s"]:after {
+    @extend .items;
+    @include pos(206, 96);
+}
+a[href="/n_wart"]:after {
+    @extend .items;
+    @include pos(206, 112);
+}
+a[href="/b_powder"]:after {
+    @extend .items;
+    @include pos(206, 144);
+}
+a[href="/m_cream"]:after {
+    @extend .items;
+    @include pos(206, 160);
+}
+a[href="/snowball"]:after {
+    @extend .items;
+    @include pos(222, 0);
+}
+a[href="/slimeball"]:after {
+    @extend .items;
+    @include pos(222, 16);
+}
+a[href="/fireball"]:after {
+    @extend .items;
+    @include pos(222, 32);
+}
+a[href="/m_seeds"]:after {
+    @extend .items;
+    @include pos(222, 48);
+}
+a[href="/ink_sac"]:after {
+    @extend .items;
+    @include pos(222, 64);
+}
+a[href="/r_red"]:after {
+    @extend .items;
+    @include pos(222, 80);
+}
+a[href="/c_green"]:after {
+    @extend .items;
+    @include pos(222, 96);
+}
+a[href="/cocoa_b"]:after {
+    @extend .items;
+    @include pos(222, 112);
+}
+a[href="/lapis"]:after {
+    @extend .items;
+    @include pos(222, 128);
+}
+a[href="/pu_dye"]:after {
+    @extend .items;
+    @include pos(222, 144);
+}
+a[href="/c_dye"]:after {
+    @extend .items;
+    @include pos(222, 160);
+}
+a[href="/lg_dye"]:after {
+    @extend .items;
+    @include pos(222, 176);
+}
+a[href="/g_dye"]:after {
+    @extend .items;
+    @include pos(238, 64);
+}
+a[href="/pi_dye"]:after {
+    @extend .items;
+    @include pos(238, 80);
+}
+a[href="/l_dye"]:after {
+    @extend .items;
+    @include pos(238, 96);
+}
+a[href="/d_yellow"]:after {
+    @extend .items;
+    @include pos(238, 112);
+}
+a[href="/lb_dye"]:after {
+    @extend .items;
+    @include pos(238, 128);
+}
+a[href="/m_dye"]:after {
+    @extend .items;
+    @include pos(238, 144);
+}
+a[href="/o_dye"]:after {
+    @extend .items;
+    @include pos(238, 160);
+}
+a[href="/bonemeal"]:after {
+    @extend .items;
+    @include pos(238, 176);
+}
+
+// Records:
+a[href="/m_13"]:after {
+    @extend .items;
+    @include pos(0, 240);
+}
+a[href="/m_cat"]:after {
+    @extend .items;
+    @include pos(16, 240);
+}
+a[href="/m_blocks"]:after {
+    @extend .items;
+    @include pos(32, 240);
+}
+a[href="/m_chirp"]:after {
+    @extend .items;
+    @include pos(48, 240);
+}
+a[href="/m_far"]:after {
+    @extend .items;
+    @include pos(64, 240);
+}
+a[href="/m_mall"]:after {
+    @extend .items;
+    @include pos(80, 240);
+}
+a[href="/m_mellohi"]:after {
+    @extend .items;
+    @include pos(96, 240);
+}
+a[href="/m_stal"]:after {
+    @extend .items;
+    @include pos(112, 240);
+}
+a[href="/m_strad"]:after {
+    @extend .items;
+    @include pos(128, 240);
+}
+a[href="/m_ward"]:after {
+    @extend .items;
+    @include pos(144, 240);
+}
+a[href="/m_11"]:after {
+    @extend .items;
+    @include pos(160, 240);
+}
