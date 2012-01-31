@@ -1,51 +1,87 @@
- 
- /* Spoiler Tag */
- a[href$="/spoiler"] {
-    background: #000 !important;
-    color: #000 !important
+/* Tournament stuff ahead: */
+/* .id-t3_oqaag {background: #F6E69F;border: 1px solid #FFA500;} */
+
+
+/* sidebar announcement thing */
+.titlebox .usertext-body .md h3 a {
+    padding: 2px 6px 2px 6px;
+    margin: 0px;
+    border-bottom: 1px solid #5F99CF;
+    border-right: 1px solid #5F99CF;
+    -webkit-border-bottom-right-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    border-bottom-right-radius: 14px;
+    z-index: 0
+}
+.pagename {
+    font-size: 12pt
+}
+/* UNCOMMENT FOR AN ANNOUNCEMENT
+.content {
+    margin-top: 40px
+    }
+.titlebox .usertext-body .md ol li a:hover {
+    background:#999;
+    color:white;
+    }
+.pagename {
+    font-size: 12pt
+    }
+.titlebox form {
+    position: static
+    }
+.titlebox .usertext-body .md ol {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    margin: 0px;
+    margin-top: 4px;
+    padding: 0px;
+    display: inline-block;
+    list-style-type: none
+    }
+.titlebox .usertext-body .md ol li a {
+    background-color:white;
+    font-family: verdana, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    color: #F73;
+    text-align: left;
+    padding: 3px 5px 3px 5px;
+    margin: 0px;
+    text-decoration: none;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    }
+.titlebox .usertext-body .md ol li a:last-child {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-right: 0px;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+    }
+.titlebox .usertext-body .md ol li:hover a:first-child {
+background:white;
+cursor:default;
+    }
+.titlebox .usertext-body .md ol li strong {
+background:black;
+color:black;
+border-top:1px solid black;
+border-bottom:1px solid black;
+padding-top:3px;
+padding-bottom:3px;
 }
 
-a[href$="/spoiler"]:hover {
-    color: #FFF !important
-}
-   
-div.usertext-body table {
-    width: 90%
-}
+END UNCOMMENT */
 
-div.usertext-body table td,
-div.usertext-body table th {
-    border: 1px solid #888;
-    font-size: 0.8em
-}
-
-/* Announcement Box */
-.preload ~ .content:before {
-    content: "Read the sidebar if you're new!  There's some really informative stuff over there! -->";
-    background-color: white;
-    color: #369;
-    font-weight: 800;
-    padding: 4px;
-    border: 1px solid #369;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px
-}
-
-/* Report Button Hover*/
+/* Report button hover thingy */
 .report-button > span.option.error:before {
    content: "Does this break the subreddit rules? ";
 }
 
-.sitetable {
-    margin-top: 14px
-}
-.content {
-    margin-top: 14px
-}
-
 /* Sidebar Test Below */
-
 .titlebox blockquote {
     border: 1px solid #AAA;
     text-shadow: 0 1px 0 white;
@@ -60,38 +96,54 @@ div.usertext-body table th {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px
+    }
+
+/* New submission header */
+#newlink:before {
+    content: "Read the rules before posting!";
+    background-color: #F6E69F;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16pt;
+    font-weight: 600;
+    border: 1px solid #FFA500;
+    font-style: italic;
 }
 
+/* Changes the 'this post was created on' text */
+.linkinfo:before {
+    content: "This post was crafted on:";
+    position: absolute;
+    background-color: #EFF7FF;
+    padding: 0px;
+    padding-right: 1em;
+    margin: 0px;
+}
 #header {
- background-color:#CCCCCC;
- background-image:url(%%rock%%);
+    background-color:#CCCCCC;
+    background-image:url(%%rock%%);
 }
-
 #header-bottom-right {
- background-color:#E9E0DB;
- }
-
-.redditname a
-{
-  color: #FFF;
+    background-color:#E9E0DB;
 }
-
-.redditname a:after
-{
+.redditname a {
+    color: #FFF;
+}
+.redditname a:after {
     content: "";
     color:orange;
     font-size:1em;
 }
-
-body
-{
-  background-image:url(%%creeperbg-transparent%%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 70% 100%;
+body {
+    background-image:url(%%creeperbg-transparent%%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70% 100%;
 } 
     
-/* Mail Icons */
+/* mail */
 #mail {
     position: relative;
     display: inline-block;
@@ -100,7 +152,6 @@ body
     width: 15px;
     height: 10px;
 }
-
 #mail.havemail {
     background:url(%%mail2%%);
 }
@@ -109,1353 +160,19 @@ body
 div.titlebox span.word {
     display: none
 }
-
 div.titlebox span.number:after {
     content: " miners."
 }
-
 div.titlebox span.number:before {
     content: "The legion of  "
 }
 
 /*User Tags*/
-.author[href$="/k__z"]:after
-{
-    color: red;
-    content: " (Painting Creator)"
-}
-
 a.author[href$="/AlLnAtuRalX"]:after{
     content: "?";
     }
 
-/* Laikapants name is now backwards. */
 
-.comment .author[href$="/laikapants"] {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-    }
-
-/* Delete me if you want, I jussssst wanted to test this */
-/* This only shows up in the res's tooltip for users anyways */
-a.hoverAuthor[href$="/aperson"]:before,
-a.hoverAuthor[href$="/aperson"]:after {
-    content: url(%%creeperhead%%);
-}
-
-    
-/* All image styling bellow */
-a[href="/minecraft"]:after { 
-    width: 80px;
-    height: 16px;
-    content: "";
-    background-image: url(%%minecrafttitle%%);
-    background-position: -0px;
-    display: inline-block;
-    cursor: default;
-}
-
-a[href="/blankhalf"]:after {
-width: 6px;
-height: 16px;
-content: "";
-background-image: url(%%terrainmobstrip%%);
-background-position: -592px;
-display: inline-block;
-cursor: default;
-}
-
-/*TERRAINMOBSTRIP*/
-a[href="/brick"]:after,
-a[href="/coal"]:after,
-a[href="/coal_ore"]:after,
-a[href="/cobblestone"]:after,
-a[href="/diamond"]:after,
-a[href="/diamond_ore"]:after,
-a[href="/flint"]:after,
-a[href="/flower"]:after,
-a[href="/furnace"]:after,
-a[href="/glass"]:after,
-a[href="/gold"]:after,
-a[href="/gold_ore"]:after,
-a[href="/grass"]:after,
-a[href="/gravel"]:after,
-a[href="/gunpowder"]:after,
-a[href="/iron"]:after,
-a[href="/iron_ore"]:after,
-a[href="/lava"]:after,
-a[href="/leaf"]:after,
-a[href="/log"]:after,
-a[href="/meat"]:after,
-a[href="/meat_cooked"]:after,
-a[href="/creeper"]:after,
-a[href="/skeleton"]:after,
-a[href="/spider"]:after,
-a[href="/zombie"]:after,
-a[href="/cobblestone_mossy"]:after,
-a[href="/obsidian"]:after,
-a[href="/sand"]:after,
-a[href="/soil"]:after,
-a[href="/stick"]:after,
-a[href="/stone"]:after,
-a[href="/tnt"]:after,
-a[href="/torch"]:after,
-a[href="/wheat"]:after,
-a[href="/wood"]:after,
-a[href="/workbench"]:after,
-a[href="/blank"]:after {
-    width: 16px;
-    height: 16px;
-    content: "";
-    background-image: url(%%terrainmobstrip%%);
-    display: inline-block;
-    cursor: default; }
-
-a[href="/brick"]:after { 
-    background-position: -0px;
-}
-
-a[href="/coal"]:after { 
-    background-position: -16px;
-}
-
-a[href="/coal_ore"]:after { 
-    background-position: -32px;
-}
-
-a[href="/cobblestone"]:after { 
-    background-position: -48px;
-}
-
-a[href="/diamond"]:after { 
-    background-position: -64px;
-}
-
-a[href="/diamond_ore"]:after { 
-    background-position: -80px;
-}
-
-a[href="/flint"]:after { 
-    background-position: -96px;
-}
-
-a[href="/flower"]:after { 
-    background-position: -112px;
-}
-
-a[href="/furnace"]:after { 
-    background-position: -128px;
-}
-
-a[href="/glass"]:after { 
-    background-position: -144px;
-}
-
-a[href="/gold"]:after { 
-    background-position: -160px;
-}
-
-a[href="/gold_ore"]:after { 
-    background-position: -176px;
-}
-
-a[href="/grass"]:after { 
-    background-position: -192px;
-}
-
-a[href="/gravel"]:after { 
-    background-position: -208px;
-}
-
-a[href="/gunpowder"]:after { 
-    background-position: -224px;
-}
-
-a[href="/iron"]:after { 
-    background-position: -240px;
-}
-
-a[href="/iron_ore"]:after { 
-    background-position: -256px;
-}
-
-a[href="/lava"]:after { 
-    background-position: -272px;
-}
-
-a[href="/leaf"]:after { 
-    background-position: -288px;
-}
-
-a[href="/log"]:after { 
-    background-position: -304px;
-}
-
-a[href="/meat"]:after { 
-    background-position: -320px;
-}
-
-a[href="/meat_cooked"]:after { 
-    background-position: -336px;
-}
-
-a[href="/creeper"]:after { 
-    background-position: -352px;
-}
-
-a[href="/skeleton"]:after { 
-    background-position: -368px;
-}
-
-a[href="/spider"]:after { 
-    background-position: -384px;
-}
-
-a[href="/zombie"]:after { 
-    background-position: -400px;
-}
-
-a[href="/cobblestone_mossy"]:after { 
-    background-position: -416px;
-}
-
-a[href="/obsidian"]:after { 
-    background-position: -432px;
-}
-
-a[href="/sand"]:after { 
-    background-position: -448px;
-}
-
-a[href="/soil"]:after { 
-    background-position: -464px;
-}
-
-a[href="/stick"]:after { 
-    background-position: -480px;
-}
-
-a[href="/stone"]:after { 
-    background-position: -496px;
-}
-
-a[href="/tnt"]:after { 
-    background-position: -512px;
-}
-
-a[href="/torch"]:after { 
-    background-position: -528px;
-}
-
-a[href="/wheat"]:after { 
-    background-position: -544px;
-}
-
-a[href="/wood"]:after { 
-    background-position: -560px;
-}
-
-a[href="/workbench"]:after { 
-    background-position: -576px;
-}
-
-a[href="/blank"]:after { 
-    background-position: -592px;
-}
-
-/*ITEMSTRIP*/
-a[href="/head_leather"]:after,
-a[href="/head_chainmail"]:after,
-a[href="/head_iron"]:after,
-a[href="/head_diamond"]:after,
-a[href="/head_gold"]:after,
-a[href="/chest_leather"]:after,
-a[href="/chest_chainmail"]:after,
-a[href="/chest_iron"]:after,
-a[href="/chest_diamond"]:after,
-a[href="/chest_gold"]:after,
-a[href="/legs_leather"]:after,
-a[href="/legs_chainmail"]:after,
-a[href="/legs_iron"]:after,
-a[href="/legs_diamond"]:after,
-a[href="/legs_gold"]:after,
-a[href="/feet_leather"]:after,
-a[href="/feet_chainmail"]:after,
-a[href="/feet_iron"]:after,
-a[href="/feet_diamond"]:after,
-a[href="/feet_gold"]:after,
-a[href="/sword_wood"]:after,
-a[href="/sword_stone"]:after,
-a[href="/sword_iron"]:after,
-a[href="/sword_diamond"]:after,
-a[href="/sword_gold"]:after,
-a[href="/shovel_wood"]:after,
-a[href="/shovel_stone"]:after,
-a[href="/shovel_iron"]:after,
-a[href="/shovel_diamond"]:after,
-a[href="/shovel_gold"]:after,
-a[href="/pick_wood"]:after,
-a[href="/pick_stone"]:after,
-a[href="/pick_iron"]:after,
-a[href="/pick_diamond"]:after,
-a[href="/pick_gold"]:after {
-    width: 16px;
-    height: 16px;
-    content: "";
-    background-image: url(%%itemstrip%%);
-    display: inline-block;
-    cursor: default; }
-
-a[href="/head_leather"]:after { 
-    background-position: -0px;
-}
-
-a[href="/head_chainmail"]:after { 
-    background-position: -16px;
-}
-
-a[href="/head_iron"]:after { 
-    background-position: -32px;
-}
-
-a[href="/head_diamond"]:after { 
-    background-position: -48px;
-}
-
-a[href="/head_gold"]:after { 
-    background-position: -64px;
-}
-
-a[href="/chest_leather"]:after { 
-    background-position: -80px;
-}
-
-a[href="/chest_chainmail"]:after { 
-    background-position: -96px;
-}
-
-a[href="/chest_iron"]:after { 
-    background-position: -112px;
-}
-
-a[href="/chest_diamond"]:after { 
-    background-position: -128px;
-}
-
-a[href="/chest_gold"]:after { 
-    background-position: -144px;
-}
-
-a[href="/legs_leather"]:after { 
-    background-position: -160px;
-}
-
-a[href="/legs_chainmail"]:after { 
-    background-position: -176px;
-}
-
-a[href="/legs_iron"]:after { 
-    background-position: -192px;
-}
-
-a[href="/legs_diamond"]:after { 
-    background-position: -208px;
-}
-
-a[href="/legs_gold"]:after { 
-    background-position: -224px;
-}
-
-a[href="/feet_leather"]:after { 
-    background-position: -240px;
-}
-
-a[href="/feet_chainmail"]:after { 
-    background-position: -256px;
-}
-
-a[href="/feet_iron"]:after { 
-    background-position: -272px;
-}
-
-a[href="/feet_diamond"]:after { 
-    background-position: -288px;
-}
-
-a[href="/feet_gold"]:after { 
-    background-position: -304px;
-}
-
-a[href="/sword_wood"]:after { 
-    background-position: -320px;
-}
-
-a[href="/sword_stone"]:after { 
-    background-position: -336px;
-}
-
-a[href="/sword_iron"]:after { 
-    background-position: -352px;
-}
-
-a[href="/sword_diamond"]:after { 
-    background-position: -368px;
-}
-
-a[href="/sword_gold"]:after { 
-    background-position: -384px;
-}
-
-a[href="/shovel_wood"]:after { 
-    background-position: -400px;
-}
-
-a[href="/shovel_stone"]:after { 
-    background-position: -416px;
-}
-
-a[href="/shovel_iron"]:after { 
-    background-position: -432px;
-}
-
-a[href="/shovel_diamond"]:after { 
-    background-position: -448px;
-}
-
-a[href="/shovel_gold"]:after { 
-    background-position: -464px;
-}
-
-a[href="/pick_wood"]:after { 
-    background-position: -480px;
-}
-
-a[href="/pick_stone"]:after { 
-    background-position: -496px;
-}
-
-a[href="/pick_iron"]:after { 
-    background-position: -512px;
-}
-
-a[href="/pick_diamond"]:after { 
-    background-position: -528px;
-}
-
-a[href="/pick_gold"]:after { 
-    background-position: -544px;
-}
-
-/*ITEMSTRIP2*/
-a[href="/axe_wood"]:after,
-a[href="/axe_stone"]:after,
-a[href="/axe_iron"]:after,
-a[href="/axe_diamond"]:after,
-a[href="/axe_gold"]:after,
-a[href="/hoe_wood"]:after,
-a[href="/hoe_stone"]:after,
-a[href="/hoe_iron"]:after,
-a[href="/hoe_diamond"]:after,
-a[href="/hoe_gold"]:after,
-a[href="/bow"]:after,
-a[href="/arrow"]:after,
-a[href="/bucket"]:after,
-a[href="/bucket_water"]:after,
-a[href="/bucket_lava"]:after,
-a[href="/bucket_milk"]:after,
-a[href="/leather"]:after,
-a[href="/saddle"]:after,
-a[href="/reddust"]:after,
-a[href="/clay"]:after,
-a[href="/bread"]:after,
-a[href="/string"]:after,
-a[href="/feather"]:after,
-a[href="/seeds"]:after,
-a[href="/apple"]:after,
-a[href="/apple_gold"]:after,
-a[href="/sign"]:after,
-a[href="/door_wood"]:after,
-a[href="/door_iron"]:after,
-a[href="/paper"]:after,
-a[href="/book"]:after,
-a[href="/cart"]:after,
-a[href="/cart_storage"]:after,
-a[href="/cart_powered"]:after,
-a[href="/boat"]:after,
-a[href="/ladder"]:after,
-a[href="/track"]:after,
-a[href="/midwireoff"]:after,
-a[href="/hwireoff"]:after,
-a[href="/midwireon"]:after,
-a[href="/hwireon"]:after {
-    width: 16px;
-    height: 16px;
-    content: "";
-    background-image: url(%%itemstrip2%%);
-    display: inline-block;
-    cursor: default; }
-    
-a[href="/axe_wood"]:after { 
-    background-position: -0px;
-}
-
-a[href="/axe_stone"]:after { 
-    background-position: -16px;
-}
-
-a[href="/axe_iron"]:after { 
-    background-position: -32px;
-}
-
-a[href="/axe_diamond"]:after { 
-    background-position: -48px;
-}
-
-a[href="/axe_gold"]:after { 
-    background-position: -64px;
-}
-
-a[href="/hoe_wood"]:after { 
-    background-position: -80px;
-}
-
-a[href="/hoe_stone"]:after { 
-    background-position: -96px;
-}
-
-a[href="/hoe_iron"]:after { 
-    background-position: -112px;
-}
-
-a[href="/hoe_diamond"]:after { 
-    background-position: -128px;
-}
-
-a[href="/hoe_gold"]:after { 
-    background-position: -144px;
-}
-
-a[href="/bow"]:after { 
-    background-position: -160px;
-}
-
-a[href="/arrow"]:after { 
-    background-position: -176px;
-}
-
-a[href="/bucket"]:after { 
-    background-position: -192px;
-}
-
-a[href="/bucket_water"]:after { 
-    background-position: -208px;
-}
-
-a[href="/bucket_lava"]:after { 
-    background-position: -224px;
-}
-
-a[href="/bucket_milk"]:after { 
-    background-position: -240px;
-}
-
-a[href="/leather"]:after { 
-    background-position: -256px;
-}
-
-a[href="/saddle"]:after { 
-    background-position: -272px;
-}
-
-a[href="/reddust"]:after { 
-    background-position: -288px;
-}
-
-a[href="/clay"]:after { 
-    background-position: -304px;
-}
-
-a[href="/bread"]:after { 
-    background-position: -320px;
-}
-
-a[href="/string"]:after { 
-    background-position: -336px;
-}
-
-a[href="/feather"]:after { 
-    background-position: -352px;
-}
-
-a[href="/seeds"]:after { 
-    background-position: -368px;
-}
-
-a[href="/apple"]:after { 
-    background-position: -384px;
-}
-
-a[href="/apple_gold"]:after { 
-    background-position: -400px;
-}
-
-a[href="/sign"]:after { 
-    background-position: -416px;
-}
-
-a[href="/door_wood"]:after { 
-    background-position: -432px;
-}
-
-a[href="/door_iron"]:after { 
-    background-position: -448px;
-}
-
-a[href="/paper"]:after { 
-    background-position: -464px;
-}
-
-a[href="/book"]:after { 
-    background-position: -480px;
-}
-
-a[href="/cart"]:after { 
-    background-position: -496px;
-}
-
-a[href="/cart_storage"]:after { 
-    background-position: -512px;
-}
-
-a[href="/cart_powered"]:after { 
-    background-position: -528px;
-}
-
-a[href="/boat"]:after { 
-    background-position: -544px;
-}
-
-a[href="/ladder"]:after { 
-    background-position: -560px;
-}
-
-a[href="/track"]:after { 
-    background-position: -576px;
-}
-
-a[href="/midwireoff"]:after { 
-    background-position: -592px;
-}
-
-a[href="/hwireoff"]:after { 
-    background-position: -608px;
-}
-
-a[href="/midwireon"]:after { 
-    background-position: -624px;
-}
-
-a[href="/hwireon"]:after { 
-    background-position: -640px;
-}
-
-/*ITEMSTRIP3*/
-a[href="/snowball"]:after,
-a[href="/redbrick"]:after,
-a[href="/jukebox"]:after,
-a[href="/flintsteel"]:after, 
-a[href="/compass"]:after,
-a[href="/button"]:after,
-a[href="/lever"]:after,
-a[href="/redtorch"]:after,
-a[href="/bowl"]:after,
-a[href="/bowl_soup"]:after,
-a[href="/mushroom_red"]:after,
-a[href="/mushroom"]:after,
-a[href="/fence"]:after,
-a[href="/art1"]:after, 
-a[href="/art2"]:after,
-a[href="/art3"]:after,
-a[href="/vwireoff"]:after,
-a[href="/vwireon"]:after,
-a[href="/red_ore"]:after {
-    width: 16px;
-    height: 16px;
-    content: "";
-    background-image: url(%%itemstrip3%%);
-    display: inline-block;
-    cursor: default
-    }
-a[href="/snowball"]:after {
-    background-position: -0px
-    }
-a[href="/redbrick"]:after {
-    background-position: -16px
-    }
-a[href="/jukebox"]:after {
-    background-position: -32px
-    }
-a[href="/flintsteel"]:after {
-    background-position: -48px
-    }
-a[href="/compass"]:after {
-    background-position: -64px
-    }
-a[href="/button"]:after {
-    background-position: -80px
-    }
-a[href="/lever"]:after {
-    background-position: -96px
-    }
-a[href="/redtorch"]:after {
-    background-position: -112px
-    }
-a[href="/bowl"]:after {
-    background-position: -128px
-    }
-a[href="/bowl_soup"]:after {
-    background-position: -144px
-    }
-a[href="/mushroom_red"]:after {
-    background-position: -160px
-    }
-a[href="/mushroom"]:after {
-    background-position: -176px
-    }
-a[href="/fence"]:after {
-    background-position: -192px
-    }
-a[href="/art1"]:after {
-    background-position: -208px
-    }
-a[href="/art2"]:after {
-    background-position: -224px
-    }
-a[href="/art3"]:after {
-    background-position: -240px
-    }
-a[href="/vwireoff"]:after {
-    background-position: -256px
-    }
-a[href="/vwireon"]:after {
-    background-position: -272px
-    }
-a[href="/red_ore"]:after {
-    background-position: -288px
-    }
-
-a[href="/crossoff"]:after, a[href="/leftrightoff"]:after, a[href="/updownoff"]:after, a[href="/leftrightdownoff"]:after, a[href="/updownleftoff"]:after, a[href="/leftrightupoff"]:after, a[href="/updownrightoff"]:after, a[href="/crosson"]:after, a[href="/leftrighton"]:after, a[href="/updownon"]:after, a[href="/leftrightdownon"]:after, a[href="/updownlefton"]:after, a[href="/leftrightupon"]:after, a[href="/updownrighton"]:after, a[href="/belowcrossoff"]:after, a[href="/belowleftrightoff"]:after, a[href="/belowupdownoff"]:after, a[href="/belowleftrightdownoff"]:after, a[href="/belowupdownleftoff"]:after, a[href="/belowleftrightupoff"]:after, a[href="/belowupdownrightoff"]:after, a[href="/belowcrosson"]:after, a[href="/belowleftrighton"]:after, a[href="/belowupdownon"]:after, a[href="/belowleftrightdownon"]:after, a[href="/belowupdownlefton"]:after, a[href="/belowleftrightupon"]:after, a[href="/belowupdownrighton"]:after, a[href="/abovecrossoff"]:after, a[href="/aboveleftrightoff"]:after, a[href="/aboveupdownoff"]:after, a[href="/aboveleftrightdownoff"]:after, a[href="/aboveupdownleftoff"]:after, a[href="/aboveleftrightupoff"]:after, a[href="/aboveupdownrightoff"]:after, a[href="/abovecrosson"]:after, a[href="/aboveleftrighton"]:after, a[href="/aboveupdownon"]:after, a[href="/aboveleftrightdownon"]:after, a[href="/aboveupdownlefton"]:after, a[href="/aboveleftrightupon"]:after, a[href="/aboveupdownrighton"]:after, a[href="/adcrossoff"]:after, a[href="/adleftrightoff"]:after, a[href="/adupdownoff"]:after, a[href="/adleftrightdownoff"]:after, a[href="/adupdownleftoff"]:after, a[href="/adleftrightupoff"]:after, a[href="/adupdownrightoff"]:after, a[href="/adcrosson"]:after, a[href="/adleftrighton"]:after, a[href="/adupdownon"]:after, a[href="/adleftrightdownon"]:after, a[href="/adupdownlefton"]:after, a[href="/adleftrightupon"]:after, a[href="/adupdownrighton"]:after {
-    width: 16px;
-    height: 16px;
-    content: "";
-    background-image: url(%%3%%);
-    display: inline-block;
-    cursor: default
-    }
-a[href="/crossoff"]:after {
-    background-position: -0px
-    }
-a[href="/leftrightoff"]:after {
-    background-position: -16px
-    }
-a[href="/updownoff"]:after {
-    background-position: -32px
-    }
-a[href="/leftrightdownoff"]:after {
-    background-position: -48px
-    }
-a[href="/updownleftoff"]:after {
-    background-position: -64px
-    }
-a[href="/leftrightupoff"]:after {
-    background-position: -80px
-    }
-a[href="/updownrightoff"]:after {
-    background-position: -96px
-    }
-a[href="/crosson"]:after {
-    background-position: -112px
-    }
-a[href="/leftrighton"]:after {
-    background-position: -128px
-    }
-a[href="/updownon"]:after {
-    background-position: -144px
-    }
-a[href="/leftrightdownon"]:after {
-    background-position: -160px
-    }
-a[href="/updownlefton"]:after {
-    background-position: -176px
-    }
-a[href="/leftrightupon"]:after {
-    background-position: -192px
-    }
-a[href="/updownrighton"]:after {
-    background-position: -208px
-    }
-a[href="/belowcrossoff"]:after {
-    background-position: -224px
-    }
-a[href="/belowleftrightoff"]:after {
-    background-position: -240px
-    }
-a[href="/belowupdownoff"]:after {
-    background-position: -256px
-    }
-a[href="/belowleftrightdownoff"]:after {
-    background-position: -272px
-    }
-a[href="/belowupdownleftoff"]:after {
-    background-position: -288px
-    }
-a[href="/belowleftrightupoff"]:after {
-    background-position: -304px
-    }
-a[href="/belowupdownrightoff"]:after {
-    background-position: -320px
-    }
-a[href="/belowcrosson"]:after {
-    background-position: -336px
-    }
-a[href="/belowleftrighton"]:after {
-    background-position: -352px
-    }
-a[href="/belowupdownon"]:after {
-    background-position: -368px
-    }
-a[href="/belowleftrightdownon"]:after {
-    background-position: -384px
-    }
-a[href="/belowupdownlefton"]:after {
-    background-position: -400px
-    }
-a[href="/belowleftrightupon"]:after {
-    background-position: -416px
-    }
-a[href="/belowupdownrighton"]:after {
-    background-position: -432px
-    }
-a[href="/abovecrossoff"]:after {
-    background-position: -448px
-    }
-a[href="/aboveleftrightoff"]:after {
-    background-position: -464px
-    }
-a[href="/aboveupdownoff"]:after {
-    background-position: -480px
-    }
-a[href="/aboveleftrightdownoff"]:after {
-    background-position: -496px
-    }
-a[href="/aboveupdownleftoff"]:after {
-    background-position: -512px
-    }
-a[href="/aboveleftrightupoff"]:after {
-    background-position: -528px
-    }
-a[href="/aboveupdownrightoff"]:after {
-    background-position: -544px
-    }
-a[href="/abovecrosson"]:after {
-    background-position: -560px
-    }
-a[href="/aboveleftrighton"]:after {
-    background-position: -576px
-    }
-a[href="/aboveupdownon"]:after {
-    background-position: -592px
-    }
-a[href="/aboveleftrightdownon"]:after {
-    background-position: -608px
-    }
-a[href="/aboveupdownlefton"]:after {
-    background-position: -624px
-    }
-a[href="/aboveleftrightupon"]:after {
-    background-position: -640px
-    }
-a[href="/aboveupdownrighton"]:after {
-    background-position: -656px
-    }
-a[href="/adcrossoff"]:after {
-    background-position: -672px
-    }
-a[href="/adleftrightoff"]:after {
-    background-position: -688px
-    }
-a[href="/adupdownoff"]:after {
-    background-position: -704px
-    }
-a[href="/adleftrightdownoff"]:after {
-    background-position: -720px
-    }
-a[href="/adupdownleftoff"]:after {
-    background-position: -736px
-    }
-a[href="/adleftrightupoff"]:after {
-    background-position: -752px
-    }
-a[href="/adupdownrightoff"]:after {
-    background-position: -768px
-    }
-a[href="/adcrosson"]:after {
-    background-position: -784px
-    }
-a[href="/adleftrighton"]:after {
-    background-position: -800px
-    }
-a[href="/adupdownon"]:after {
-    background-position: -816px
-    }
-a[href="/adleftrightdownon"]:after {
-    background-position: -832px
-    }
-a[href="/adupdownlefton"]:after {
-    background-position: -848px
-    }
-a[href="/adleftrightupon"]:after {
-    background-position: -864px
-    }
-a[href="/adupdownrighton"]:after {
-    background-position: -880px
-    }
-a[href="/uptorchoff"]:after, a[href="/righttorchoff"]:after, a[href="/downtorchoff"]:after, a[href="/lefttorchoff"]:after, a[href="/uptorchon"]:after, a[href="/righttorchon"]:after, a[href="/downtorchon"]:after, a[href="/lefttorchon"]:after, a[href="/belowuptorchoff"]:after, a[href="/belowrighttorchoff"]:after, a[href="/belowdowntorchoff"]:after, a[href="/belowlefttorchoff"]:after, a[href="/belowuptorchon"]:after, a[href="/belowrighttorchon"]:after, a[href="/belowdowntorchon"]:after, a[href="/belowlefttorchon"]:after, a[href="/aboveuptorchon"]:after, a[href="/aboverighttorchon"]:after, a[href="/abovedowntorchon"]:after, a[href="/abovelefttorchon"]:after, a[href="/aboveuptorchoff"]:after, a[href="/aboverighttorchoff"]:after, a[href="/abovedowntorchoff"]:after, a[href="/abovelefttorchoff"]:after, a[href="/aduptorchoff"]:after, a[href="/adrighttorchoff"]:after, a[href="/addowntorchoff"]:after, a[href="/adlefttorchoff"]:after, a[href="/aduptorchon"]:after, a[href="/adrighttorchon"]:after, a[href="/addowntorchon"]:after, a[href="/adlefttorchon"]:after, a[href="/blankborder"]:after, a[href="/aboveblankborder"]:after, a[href="/belowblankborder"]:after, a[href="/adblankborder"]:after, a[href="/abovetorchoff"]:after, a[href="/abovetorchon"]:after, a[href="/torchoff"]:after, a[href="/torchon"]:after, a[href="/belowtorchoff"]:after, a[href="/belowtorchon"]:after, a[href="/adtorchoff"]:after, a[href="/adtorchon"]:after {
-    width: 16px;
-    height: 16px;
-    content: "";
-    background-image: url(%%2%%);
-    display: inline-block;
-    cursor: default
-    }
-a[href="/uptorchoff"]:after {
-    background-position: -0px
-    }
-a[href="/righttorchoff"]:after {
-    background-position: -16px
-    }
-a[href="/downtorchoff"]:after {
-    background-position: -32px
-    }
-a[href="/lefttorchoff"]:after {
-    background-position: -48px
-    }
-a[href="/uptorchon"]:after {
-    background-position: -64px
-    }
-a[href="/righttorchon"]:after {
-    background-position: -80px
-    }
-a[href="/downtorchon"]:after {
-    background-position: -96px
-    }
-a[href="/lefttorchon"]:after {
-    background-position: -112px
-    }
-a[href="/belowuptorchoff"]:after {
-    background-position: -128px
-    }
-a[href="/belowrighttorchoff"]:after {
-    background-position: -144px
-    }
-a[href="/belowdowntorchoff"]:after {
-    background-position: -160px
-    }
-a[href="/belowlefttorchoff"]:after {
-    background-position: -176px
-    }
-a[href="/belowuptorchon"]:after {
-    background-position: -192px
-    }
-a[href="/belowrighttorchon"]:after {
-    background-position: -208px
-    }
-a[href="/belowdowntorchon"]:after {
-    background-position: -224px
-    }
-a[href="/belowlefttorchon"]:after {
-    background-position: -240px
-    }
-a[href="/aboveuptorchon"]:after {
-    background-position: -256px
-    }
-a[href="/aboverighttorchon"]:after {
-    background-position: -272px
-    }
-a[href="/abovedowntorchon"]:after {
-    background-position: -288px
-    }
-a[href="/abovelefttorchon"]:after {
-    background-position: -304px
-    }
-a[href="/aboveuptorchoff"]:after {
-    background-position: -320px
-    }
-a[href="/aboverighttorchoff"]:after {
-    background-position: -336px
-    }
-a[href="/abovedowntorchoff"]:after {
-    background-position: -352px
-    }
-a[href="/abovelefttorchoff"]:after {
-    background-position: -368px
-    }
-a[href="/aduptorchoff"]:after {
-    background-position: -384px
-    }
-a[href="/adrighttorchoff"]:after {
-    background-position: -400px
-    }
-a[href="/addowntorchoff"]:after {
-    background-position: -416px
-    }
-a[href="/adlefttorchoff"]:after {
-    background-position: -432px
-    }
-a[href="/aduptorchon"]:after {
-    background-position: -448px
-    }
-a[href="/adrighttorchon"]:after {
-    background-position: -464px
-    }
-a[href="/addowntorchon"]:after {
-    background-position: -480px
-    }
-a[href="/adlefttorchon"]:after {
-    background-position: -496px
-    }
-a[href="/blankborder"]:after {
-    background-position: -512px
-    }
-a[href="/aboveblankborder"]:after {
-    background-position: -528px
-    }
-a[href="/belowblankborder"]:after {
-    background-position: -544px
-    }
-a[href="/adblankborder"]:after {
-    background-position: -560px
-    }
-a[href="/abovetorchoff"]:after {
-    background-position: -576px
-    }
-a[href="/abovetorchon"]:after {
-    background-position: -592px
-    }
-a[href="/torchoff"]:after {
-    background-position: -608px
-    }
-a[href="/torchon"]:after {
-    background-position: -624px
-    }
-a[href="/belowtorchoff"]:after {
-    background-position: -640px
-    }
-a[href="/belowtorchon"]:after {
-    background-position: -656px
-    }
-a[href="/adtorchoff"]:after {
-    background-position: -672px
-    }
-a[href="/adtorchon"]:after {
-    background-position: -688px
-    }
-a[href="/leftdownoff"]:after, a[href="/leftupoff"]:after, a[href="/uprightoff"]:after, a[href="/downrightoff"]:after, a[href="/leftdownon"]:after, a[href="/leftupon"]:after, a[href="/uprighton"]:after, a[href="/downrighton"]:after, a[href="/belowleftdownoff"]:after, a[href="/belowleftupoff"]:after, a[href="/belowuprightoff"]:after, a[href="/belowdownrightoff"]:after, a[href="/belowleftdownon"]:after, a[href="/belowleftupon"]:after, a[href="/belowuprighton"]:after, a[href="/belowdownrighton"]:after, a[href="/aboveleftdownoff"]:after, a[href="/aboveleftupoff"]:after, a[href="/aboveuprightoff"]:after, a[href="/abovedownrightoff"]:after, a[href="/aboveleftdownon"]:after, a[href="/aboveleftupon"]:after, a[href="/aboveuprighton"]:after, a[href="/abovedownrighton"]:after, a[href="/adleftdownoff"]:after, a[href="/adleftupoff"]:after, a[href="/aduprightoff"]:after, a[href="/addownrightoff"]:after, a[href="/adleftdownon"]:after, a[href="/adleftupon"]:after, a[href="/aduprighton"]:after, a[href="/addownrighton"]:after, a[href="/vark"]:after, a[href="/varj"]:after, a[href="/varq"]:after, a[href="/vara"]:after, a[href="/varb"]:after, a[href="/varc"]:after, a[href="/vard"]:after {
-    width: 16px;
-    height: 16px;
-    content: "";
-    background-image: url(%%1%%);
-    display: inline-block;
-    cursor: default
-    }
-a[href="/leftdownoff"]:after {
-    background-position: -0px
-    }
-a[href="/leftupoff"]:after {
-    background-position: -16px
-    }
-a[href="/uprightoff"]:after {
-    background-position: -32px
-    }
-a[href="/downrightoff"]:after {
-    background-position: -48px
-    }
-a[href="/leftdownon"]:after {
-    background-position: -64px
-    }
-a[href="/leftupon"]:after {
-    background-position: -80px
-    }
-a[href="/uprighton"]:after {
-    background-position: -96px
-    }
-a[href="/downrighton"]:after {
-    background-position: -112px
-    }
-a[href="/belowleftdownoff"]:after {
-    background-position: -128px
-    }
-a[href="/belowleftupoff"]:after {
-    background-position: -144px
-    }
-a[href="/belowuprightoff"]:after {
-    background-position: -160px
-    }
-a[href="/belowdownrightoff"]:after {
-    background-position: -176px
-    }
-a[href="/belowleftdownon"]:after {
-    background-position: -192px
-    }
-a[href="/belowleftupon"]:after {
-    background-position: -208px
-    }
-a[href="/belowuprighton"]:after {
-    background-position: -224px
-    }
-a[href="/belowdownrighton"]:after {
-    background-position: -240px
-    }
-a[href="/aboveleftdownoff"]:after {
-    background-position: -256px
-    }
-a[href="/aboveleftupoff"]:after {
-    background-position: -272px
-    }
-a[href="/aboveuprightoff"]:after {
-    background-position: -288px
-    }
-a[href="/abovedownrightoff"]:after {
-    background-position: -304px
-    }
-a[href="/aboveleftdownon"]:after {
-    background-position: -320px
-    }
-a[href="/aboveleftupon"]:after {
-    background-position: -336px
-    }
-a[href="/aboveuprighton"]:after {
-    background-position: -352px
-    }
-a[href="/abovedownrighton"]:after {
-    background-position: -368px
-    }
-a[href="/adleftdownoff"]:after {
-    background-position: -384px
-    }
-a[href="/adleftupoff"]:after {
-    background-position: -400px
-    }
-a[href="/aduprightoff"]:after {
-    background-position: -416px
-    }
-a[href="/addownrightoff"]:after {
-    background-position: -432px
-    }
-a[href="/adleftdownon"]:after {
-    background-position: -448px
-    }
-a[href="/adleftupon"]:after {
-    background-position: -464px
-    }
-a[href="/aduprighton"]:after {
-    background-position: -480px
-    }
-a[href="/addownrighton"]:after {
-    background-position: -496px
-    }
-a[href="/vark"]:after {
-    background-position: -512px
-    }
-a[href="/varj"]:after {
-    background-position: -528px
-    }
-a[href="/varq"]:after {
-    background-position: -544px
-    }
-a[href="/vara"]:after {
-    background-position: -560px
-    }
-a[href="/varb"]:after {
-    background-position: -576px
-    }
-a[href="/varc"]:after {
-    background-position: -592px
-    }
-a[href="/vard"]:after {
-    background-position: -608px
-    }
-
-/* User Flair: */
-.flair {
-    background: url(%%flair%%) no-repeat scroll -9999px -9999px transparent;
-    height: 16px;
-    vertical-align: middle;
-    width: 16px;
-    border: 0px;
-    padding: 0px !important;
-    content: "";
- }
-
-.flair-blaze {
-    background-position: 0px 0px;
-}
-.flair-cavespider {
-    background-position: 0px -16px;
-}
-.flair-chicken {
-    background-position: 0px -32px;
-}
-.flair-cow {
-    background-position: 0px -48px;
-}
-.flair-creeper {
-    background-position: 0px -64px;
-}
-.flair-enderdragon {
-    background-position: 0px -80px;
-}
-.flair-enderman {
-    background-position: 0px -96px;
-}
-.flair-ghast {
-    background-position: 0px -112px;
-}
-.flair-steve {
-    background-position: 0px -128px;
-}
-.flair-magmacube {
-    background-position: 0px -144px;
-}
-.flair-mooshroom {
-    background-position: 0px -160px;
-}
-.flair-pig {
-    background-position: 0px -176px;
-}
-.flair-sheep {
-    background-position: 0px -192px;
-}
-.flair-silverfish {
-    background-position: 0px -208px;
-}
-.flair-skeleton {
-    background-position: 0px -224px;
-}
-.flair-slime {
-    background-position: 0px -240px;
-}
-.flair-snowgolem {
-    background-position: 0px -256px;
-}
-.flair-spider {
-    background-position: 0px -272px;
-}
-.flair-squid {
-    background-position: 0px -288px;
-}
-.flair-testificate {
-    background-position: 0px -304px;
-}
-.flair-wolf {
-    background-position: 0px -320px;
-}
-.flair-zombie {
-    background-position: 0px -336px;
-}
-.flair-zombiepigman {
-    background-position: 0px -352px;
-}
-.flair-mojang {
-    background-position: 0px -368px;
-}
-.flair-lightgraysheep {
-    background-position: 0px -384px;
-}
-.flair-graysheep {
-    background-position: 0px -400px;
-}
-.flair-blacksheep {
-    background-position: 0px -416px;
-}
-.flair-brownsheep {
-    background-position: 0px -432px;
-}
-.flair-pinksheep {
-    background-position: 0px -448px;
-}
-.flair-redsheep {
-    background-position: 0px -464px;
-}
-.flair-orangesheep {
-    background-position: 0px -480px;
-}
-.flair-yellowsheep {
-    background-position: 0px -496px;
-}
-.flair-limesheep {
-    background-position: 0px -512px;
-}
-.flair-greensheep {
-    background-position: 0px -528px;
-}
-.flair-lightbluesheep {
-    background-position: 0px -544px;
-}
-.flair-cyansheep {
-    background-position: 0px -560px;
-}
-.flair-bluesheep {
-    background-position: 0px -576px;
-}
-.flair-purplesheep {
-    background-position: 0px -592px;
-}
-.flair-magentasheep {
-    background-position: 0px -608px;
-}
-
-/* Old 'Flair' */
-.flair-turkey {
-    /* Put the right flair here */
-}
-
-.flair-gturkey {
-    /* Put the right flair here */
-}
-
-.flair-servdonator {
-    /* Put the right flair here */
-}
-
-.flair-helper {
-    /* Put the right flair here */
-}
-
-.flair-dj {
-    /* Put the right flair here */
-}
-
-.flair-admin {
-    /* Put the right flair here */
-}
-
-.flair-survivor {
-    /* Put the right flair here */
-}
-
-.flair-participant {
-    /* Put the right flair here */
-}
-
-.flar-painting {
-    /* Put the right flair here */
-}
-
-
-
-
-/* Remove this when done
 a.author[href$="/tayworm"]:after,a.author[href$="/armchairnixon"]:after,a.author[href$="/lego-banana"]:after,a.author[href$="/TaviRider"]:after,a.author[href$="/cecilkorik"]:after,a.author[href$="/nullpacket"]:after,a.author[href$="/squatly"]:after,a.author[href$="/jakemcgraw"]:after,a.author[href$="/shawnsonium"]:after,a.author[href$="/cablemonkey"]:after,a.author[href$="/Bales75"]:after,a.author[href$="/CmdrTebok"]:after,a.author[href$="/forty_two"]:after,a.author[href$="/trevorsutton"]:after,a.author[href$="/pettazz"]:after,a.author[href$="/anonymouse91"]:after,a.author[href$="/Mark"]:after,a.author[href$="/Garrett"]:after,a.author[href$="/Jesse"]:after,a.author[href$="/TheQuietOne"]:after,a.author[href$="/William"]:after,a.author[href$="/Herobrine"]:after,a.author[href$="/Joseph"]:after,a.author[href$="/lenaro"]:after,a.author[href$="/Skuld"]:after,a.author[href$="/Alvaro"]:after,a.author[href$="/Trinette"]:after,a.author[href$="/Ginger"]:after,a.author[href$="/AlLnAtuRalX"]:after,a.author[href$="/Daychilde"]:after,a.author[href$="/draggin_low"]:after,a.author[href$="/Cablemonkey"]:after,a.author[href$="/sstrickl"]:after,a.author[href$="/golf1052"]:after,a.author[href$="/CousinMosquito"]:after,a.author[href$="/Lord_Munkee"]:after,a.author[href$="/jcll"]:after,a.author[href$="/rossberry"]:after,a.author[href$="/adrianp"]:after,a.author[href$="/p0sco"]:after,a.author[href$="/theCroc"]:after,a.author[href$="/Lagrange"]:after,a.author[href$="/cattrain"]:after,a.author[href$="/Lampjaw"]:after,a.author[href$="/SuitableUsername"]:after,a.author[href$="/ArcadeStorm"]:after,a.author[href$="/justawhale"]:after,a.author[href$="/fazaden"]:after,a.author[href$="/ThatsANiceEverything"]:after,a.author[href$="/silentbob583"]:after,a.author[href$="/greenboy919"]:after,a.author[href$="/AtheistAgnostic"]:after,a.author[href$="/mikereads"]:after,a.author[href$="/p4nny"]:after,a.author[href$="/BFKelleher"]:after,a.author[href$="/jupiter3888"]:after,a.author[href$="/Ahtna"]:after,a.author[href$="/cthulhu_zuul"]:after,a.author[href$="/bsheairs"]:after,a.author[href$="/Flannel_Man"]:aftera.author[href$="/AngryMathDave"]:after,a.author[href$="/Dvorak42"]:after,a.author[href$="/Laughing_man"]:after,a.author[href$="/Nix725"]:after,a.author[href$="/AngryMathDave"]:after,a.author[href$="/DJ-Anakin"]:after,a.author[href$="/pspkicks316"]:after,a.author[href$="/pspkicks316"]:after,a.author[href$="/tmbridge"]:after,a.author[href$="/Sycosys"]:after,a.author[href$="/Leading_Man_Parts"]:after,a.author[href$="/vjness101"]:after,a.author[href$="/lifeofthunder"]:after,a.author[href$="/jk2323"]:after,a.author[href$="/daychilde"]:after,a.author[href$="/Zeropointeffect"]:after,a.author[href$="/pressertim"]:after,a.author[href$="/j0hn33y"]:after,a.author[href$="/X3Maverick"]:after,a.author[href$="/outwrangle"]:after,a.author[href$="/Dakewla"]:after,a.author[href$="/TurplePurtle"]:after,a.author[href$="/Eustis"]:after,a.author[href$="/klhinkle"]:after,a.author[href$="/PseudoBeard"]:after,a.author[href$="/Pharmboy_Andy"]:after,a.author[href$="/swytz"]:after,a.author[href$="/skug"]:after,a.author[href$="/shen"]:after,a.author[href$="/JesusTheCaffeine"]:after,a.author[href$="/Vietarmis"]:after,a.author[href$="/ThePwnStick"]:after,a.author[href$="/HolyZesto"]:after,a.author[href$="/SmudgeTheFirst"]:after,a.author[href$="/HolyZesto"]:after,a.author[href$="/BArmstrong"]:after,a.author[href$="/thatPaulBloke"]:after,a.author[href$="/Konryou"]:after,a.author[href$="/wilsonc11"]:after {
 margin-left: 3px !important;
 margin-bottom: 3px !important;
@@ -1492,4 +209,134 @@ content: url(%%turkey%%);
     }
 
 a.author[href$="/themangeraaad"]:after,a.author[href$="/PhanTom74"]:after,a.author[href$="/muldoonaz"]:after,a.author[href$="/kinghfb"]:after, a.author[href$="/ajdane"]:after, a.author[href$="/sirmalloc"]:after, a.author[href$="/roastnewt"]:after,a.author[href$="/jakemates"]:after,a.author[href$="/Rainshadow_"]:after,a.author[href$="/Ambiguous_comment"]:after,a.author[href$="/MinecraftMosquito"]:after{content: url(%%gturk%%); }
-*/
+
+/* Laikapants name is now backwards. */
+
+.comment .author[href$="/laikapants"] {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    }
+
+/* Delete me if you want, I jussssst wanted to test this */
+/* This only shows up in the res's tooltip for users anyways */
+#authorInfoToolTip h3 a[href$="/aperson"]:before, #authorInfoToolTip h3 a[href$="/aperson"]:after {
+    content: url(%%creeperhead%%);
+}
+    
+    /* Spoiler Tags */
+a[href$="/spoiler"] {  
+background: #000 !important;  
+color: #000 !important  
+}  
+
+a[href$="/spoiler"]:hover {  
+color: #FFF !important  
+}  
+
+/* User flair stuffs: */
+.flair {
+    background: url(%%flair%%) no-repeat scroll -9999px -9999px transparent;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+    border: 0px;
+    text-indent: -9999px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    padding: 0px !important;
+    margin-bottom: 2px;
+}
+.flair:hover {
+    width: auto;
+    min-width: 16px;
+    text-indent: 18px;
+}
+
+/* Flair sprite coordinates: */
+.flair-blaze          {background-position: 0px 0px}
+.flair-cavespider     {background-position: 0px -16px}
+.flair-chicken        {background-position: 0px -32px}
+.flair-cow            {background-position: 0px -48px}
+.flair-creeper        {background-position: 0px -64px}
+.flair-enderdragon    {background-position: 0px -80px}
+.flair-enderman       {background-position: 0px -96px}
+.flair-ghast          {background-position: 0px -112px}
+.flair-steve          {background-position: 0px -128px}
+.flair-magmacube      {background-position: 0px -144px}
+.flair-mooshroom      {background-position: 0px -160px}
+.flair-pig            {background-position: 0px -176px}
+.flair-sheep          {background-position: 0px -192px}
+.flair-silverfish     {background-position: 0px -208px}
+.flair-skeleton       {background-position: 0px -224px}
+.flair-slime          {background-position: 0px -240px}
+.flair-snowgolem      {background-position: 0px -256px}
+.flair-spider         {background-position: 0px -272px}
+.flair-squid          {background-position: 0px -288px}
+.flair-testificate    {background-position: 0px -304px}
+.flair-wolf           {background-position: 0px -320px}
+.flair-zombie         {background-position: 0px -336px}
+.flair-zombiepigman   {background-position: 0px -352px}
+.flair-mojang         {background-position: 0px -368px}
+.flair-lightgraysheep {background-position: 0px -384px}
+.flair-graysheep      {background-position: 0px -400px}
+.flair-blacksheep     {background-position: 0px -416px}
+.flair-brownsheep     {background-position: 0px -432px}
+.flair-pinksheep      {background-position: 0px -448px}
+.flair-redsheep       {background-position: 0px -464px}
+.flair-orangesheep    {background-position: 0px -480px}
+.flair-yellowsheep    {background-position: 0px -496px}
+.flair-limesheep      {background-position: 0px -512px}
+.flair-greensheep     {background-position: 0px -528px}
+.flair-lightbluesheep {background-position: 0px -544px}
+.flair-cyansheep      {background-position: 0px -560px}
+.flair-bluesheep      {background-position: 0px -576px}
+.flair-purplesheep    {background-position: 0px -592px}
+.flair-magentasheep   {background-position: 0px -608px}
+.flair-ozelot         {background-position: 0px -624px}
+.flair-catsiamese     {background-position: 0px -640px}
+.flair-catred         {background-position: 0px -656px}
+.flair-catblack       {background-position: 0px -672px}
+.flair-rftw           {background-position: 0px -688px}
+.flair-redstonehelper {background-position: 0px -704px}
+.flair-painting       {background-position: 0px -720px}
+.flair-bukkit         {background-position: 0px -736px}
+
+/* Special hover stuff for flair: */
+.flair-rftw:hover {
+    background-color: #184E13 !important;
+    color: white;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+/* Things Skuld did and labeled poorly */
+
+.titlebox a[href="/n0lat"]:after {
+    content: "";
+    width: 300px;
+    height: 100px;
+    background-image: url(%%rfw%%);
+    display: inline-block;
+    position: relative
+    }
+
+.tabmenu li a {color:black; background-color: white}
+
+.titlebox a[href*="oguwr"] {color: orangered}
+
+/* redstonehelper tries css */
+
+/* Make the modqueue waypoint post green & disable approval from r/Minecraft/about/modqueue and r/Minecraft/about/spam with new beptastic code*/
+.id-t3_ozfd3 {background: #7FD485 !important; padding:4px; border-radius:5px;}
+.id-t3_ozfd3  .big-mod-buttons {display:none;}
+.id-t3_ozfd3 a.title {font-size:0pt; color:#7FD485;}
+.id-t3_ozfd3 a.title:visited {font-size:0pt; color:#7FD485 !important;}
+.id-t3_ozfd3 a.title:link {font-size:0pt; color:#7FD485;}
+.id-t3_ozfd3 a.title:after {display:inline; content:"==[SPAM QUEUE WAYPOINT - DON'T TOUCH THIS POST]=="; color:#0000FF !important; font-weight:900; font-size:14pt; font-family:"calibri", "verdana";}
+
+.id-t3_ozfd3  .tagline {display:none;}
+.id-t3_ozfd3  .midcol {display:none;}
+.id-t3_ozfd3  .flat-list {display:none;}
+.id-t3_ozfd3  .domain {display:none;}
