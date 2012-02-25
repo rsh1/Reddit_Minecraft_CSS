@@ -583,7 +583,7 @@ a[href="/lg_dye"] {
 }
 a[href="/g_dye"] {
     @extend .items;
-    @include pos(224, 64);
+    @include pos(240, 64);
 }
 a[href="/pi_dye"] {
     @extend .items;
