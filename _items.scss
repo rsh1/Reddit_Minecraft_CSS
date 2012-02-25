@@ -659,3 +659,7 @@ a[href="/m_11"] {
     @extend .items;
     @include pos(160, 240);
 }
+a[href="/bottle_enchanting"] {
+    @extend .items;
+    @include pos(176, 160);
+}
